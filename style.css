@@ -1,0 +1,436 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lobster&family=Lora:ital,wght@0,400..700;1,400..700&family=Orbitron:wght@400..900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Oswald', 'Arial', 'sans-serif';
+    background-color: #000000;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background: sticky;
+}
+
+#container {
+
+    width: 100%;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    overflow: visible;
+}
+
+.left-nav {
+    display: flex;
+    /* logo + links side by side */
+    align-items: center;
+    /* vertically center */
+    justify-content: flex-start;
+    /* keep everything on left (you can use space-between if you want right-nav filled later) */
+    height: 100%;
+}
+
+.logoimg {
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+    margin-right: 20px;
+    margin-left: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+
+}
+
+.header {
+    width: 100%;
+    height: 56px;
+    margin-top: 10px;
+    background: linear-gradient(#123456, #098765);
+    border-radius: 45px;
+    display: inline-block;
+}
+
+nav {
+    display: flex;
+    /* logo + links side by side */
+    align-items: center;
+    /* vertically center */
+    justify-content: flex-start;
+    /* keep everything on left (you can use space-between if you want right-nav filled later) */
+    height: 100%;
+    padding: 0 20px;
+}
+
+.navlist {
+    list-style: none;
+    display: flex;
+    /* make list items horizontal */
+    gap: 100px;
+    /* spacing between links */
+    margin-left: 150px;
+    margin-right: 10px;
+    padding: 0;
+}
+
+.navlist li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    /* looks clean on dark themes */
+    transition: color 0.3s;
+}
+
+.navlist li a:hover {
+    color: #ffd700;
+    /* gold hover effect */
+}
+
+.right-nav {
+    width: auto;
+    margin: auto;
+    position: center;
+
+}
+
+.btn1 {
+    padding: 0px;
+    margin-left: 50px;
+    width: 100px;
+    height: 40px;
+    border: 1px outset yellow;
+    border-radius: 45px;
+    background: linear-gradient(#456789, #654322);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.btn1:hover {
+    color: #ffd700;
+    transform: scale(1.08);
+}
+
+
+.btn1a {
+    color: #ffd700;
+    text-decoration: none;
+    padding: 12px 24px;
+}
+
+.main {
+    color: white;
+    /* border: 2px solid white; */
+    height: 27rem;
+    width: 50rem;
+    margin: 10px;
+    padding: 10px;
+
+}
+
+.mainh1 {
+    margin-top: 40px;
+    margin-bottom: 80px;
+    margin-left: 20px;
+}
+
+.mainp1 {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    margin-left: 20px;
+}
+
+.mainbody {
+    display: flex;
+    opacity: 0;                 /* start hidden */
+  transform: translateY(30px); /* slight slide from below */
+  animation: fadeInUp 1.2s ease-out forwards;
+  animation-delay: 0.3s;      /* small delay so it feels smooth */
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.imagemain {
+    margin: 10px;
+    /* margin-left:100px;  */
+    padding: 20px;
+    /* center block itself horizontally */
+    /* padding-left: 140px; */
+    height: 26rem;
+    width: 30rem;
+    display: flex;
+    /* make it flexbox */
+    align-items: center;
+    /* vertical center */
+    justify-content: center;
+    /* horizontal center */
+    /* border: 2px solid white; */
+}
+
+.imagemainimg {
+    width: 24rem;
+    height: 28rem;
+    border-radius: 12px;
+}
+
+.midpage {
+    height: 4rem;
+    width: auto;
+    color: cyan;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid white; */
+}
+
+.articlesbro {
+    /* border: 2px solid white; */
+    height: 26rem;
+    width: auto;
+    margin: 10px;
+    color: white;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.article1 {
+    margin: 10px 0px;
+    /* border: 1px solid yellow; */
+    width: 50rem;
+    opacity: 0;
+  transition: all 1s ease-out;
+  transform: translateX(-50px);
+}
+
+.articleh1 {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    margin-left: 20px;
+}
+
+.articlep {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    margin-left: 20px;
+}
+
+.article1img {
+    width: 26rem;
+    height: 20rem;
+    /* border: 1px solid yellow; */
+    padding: 10px;
+    margin: 30px;
+    margin-left: 100px;
+    opacity: 0;
+  transition: all 1s ease-out;
+  transform: translateX(50px);
+}
+
+.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.articleimg1done {
+    width: 26rem;
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+}
+
+.article2 {
+    margin: 10px 0px;
+    /* border: 1px solid yellow; */
+    width: 50rem;
+    opacity: 0;
+  transition: all 1s ease-out;
+  transform: translateX(50px);
+}
+
+.articleh2 {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    margin-left: 20px;
+}
+
+.article2img {
+    width: 26rem;
+    height: 22rem;
+    /* border: 1px solid yellow; */
+    padding: 10px;
+    margin: 20px;
+    margin-left: 40px;
+    opacity: 0;
+  transition: all 1s ease-out;
+  transform: translateX(-50px);
+}
+
+.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.articleimg2done {
+    width: 26rem;
+    height: 22rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+}
+
+
+.article3 {
+    margin: 10px 0px;
+    /* border: 1px solid yellow; */
+    width: 50rem;
+    opacity: 0;
+  transform: translateX(-50px); /* slide in from left */
+  transition: all 0.8s ease;
+}
+
+.articleh3 {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    margin-left: 20px;
+}
+
+.article3img {
+    width: 26rem;
+    height: 22rem;
+    /* border: 1px solid yellow; */
+    padding: 10px;
+    margin: 20px;
+    margin-left: 40px;
+    opacity: 0;
+  transform: translateX(50px); /* slide in from right */
+  transition: all 0.8s ease;
+}
+
+.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.articleimg3done {
+    width: 26rem;
+    height: 22rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+}
+
+.contact {
+    margin: 20px;
+    width: auto;
+    height: 34rem;
+    border: 2px outset yellow;
+    border-radius: 16px;
+    background: rgb(62, 60, 60);
+}
+
+.sectionh2 {
+    margin: 10px;
+    padding: 10px 40px;
+    color: white;
+    /* border: 1px solid yellow; */
+    width: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.sectionp {
+    margin: 10px;
+    padding: 10px 40px;
+    color: white;
+    /* border: 1px solid yellow; */
+    width: auto;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-form {
+    width: auto;
+    height: 20rem;
+    /* border: 1px solid yellow; */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contactinfo {
+    width: 80%;
+  margin: auto;
+  padding: 10px;
+  border: 1px solid yellow;
+  border-radius: 8px;
+  background: #1A1A1A;
+  color: white;
+}
+
+.btn3 {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    color: yellow;
+    background: linear-gradient(#456789, #654322);
+    width: 10rem;
+    height: 4rem;
+    border: 1px outset yellow;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.btn3:hover {
+    transform: scale(1.04);
+}
+
+.social-icons {
+    margin: 26px;
+    margin-left: 28rem;
+  display: flex;
+  gap: 10rem; /* space between icons */
+}
+
+.social-icons a {
+  color: rgb(62, 220, 255);
+  font-size: 34px;       /* makes icons 34px */
+  width: 34px;
+  height: 34px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  background: transparent; 
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: white; /* on hover, icons turn white */
+  transform: scale(1.06);
+}

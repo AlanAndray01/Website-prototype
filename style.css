@@ -434,3 +434,139 @@ nav {
   color: white; /* on hover, icons turn white */
   transform: scale(1.06);
 }
+
+
+/* ============================= */
+/* 📱 Mobile First Adjustments   */
+/* ============================= */
+
+/* Small phones (up to ~480px, e.g. Redmi 13C, iPhone SE size) */
+@media (max-width: 480px) {
+  .header {
+    border-radius: 0;
+    height: auto;
+  }
+
+  nav {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .navlist {
+    flex-direction: column;
+    gap: 20px;
+    margin: 0;
+    text-align: center;
+  }
+
+  .mainbody {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .main {
+    width: 100%;
+    text-align: center;
+  }
+
+  .imagemain {
+    width: 100%;
+    height: auto;
+    margin: auto;
+  }
+
+  .imagemainimg {
+    width: 90%;
+    height: auto;
+  }
+
+  .articlesbro,
+  .article2,
+  .article3 {
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+  }
+
+  .article1,
+  .article2,
+  .article3 {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .article1img,
+  .article2img,
+  .article3img {
+    width: 100%;
+    margin: auto;
+  }
+
+  .articleimg1done,
+  .articleimg2done,
+  .articleimg3done {
+    width: 90%;
+    height: auto;
+  }
+
+  .contact {
+    width: 95%;
+    margin: 10px auto;
+  }
+
+  .social-icons {
+    margin: 10px auto;
+    justify-content: center;
+    gap: 2rem;
+  }
+}
+
+/* Medium devices (tablets like iPad, Galaxy Tab, Surface Pro) */
+@media (min-width: 481px) and (max-width: 1024px) {
+  .navlist {
+    gap: 40px;
+    margin-left: 20px;
+  }
+
+  .mainbody {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .main {
+    width: 90%;
+    margin: auto;
+  }
+
+  .imagemain {
+    width: 90%;
+    margin: auto;
+  }
+
+  .articlesbro {
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+  }
+
+  .article1, .article2, .article3 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .article1img, .article2img, .article3img {
+    width: 90%;
+    margin: 20px auto;
+  }
+
+  .contact {
+    width: 90%;
+    margin: 20px auto;
+  }
+
+  .social-icons {
+    margin: 20px auto;
+    justify-content: center;
+    gap: 4rem;
+  }
+}
